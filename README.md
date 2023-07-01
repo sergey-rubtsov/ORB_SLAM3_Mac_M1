@@ -1,8 +1,10 @@
 # ORB-SLAM3
 
-This is port of ORB-SLAM3 for Apple Mac M1 (arm64)
-Dependencies on openssl were removed from the code
-Python scripts ported from Python version 2 to 3
+This is port of ORB-SLAM3 for Apple Mac M1 (arm64). 
+
+Dependencies on openssl were removed from the code. 
+
+Python scripts for evaluation were ported from Python version 2 to 3.
 
 ### V1.0, December 22th, 2021
 **Authors:** Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
