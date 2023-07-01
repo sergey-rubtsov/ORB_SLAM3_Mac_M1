@@ -1,5 +1,9 @@
 # ORB-SLAM3
 
+This is port of ORB-SLAM3 for Apple Mac M1 (arm64)
+Dependencies on openssl were removed from the code
+Python scripts ported from Python version 2 to 3
+
 ### V1.0, December 22th, 2021
 **Authors:** Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 
@@ -72,7 +76,7 @@ We use modified versions of the [DBoW2](https://github.com/dorian3d/DBoW2) libra
 Required to calculate the alignment of the trajectory with the ground truth. **Required Numpy module**.
 
 * (win) http://www.python.org/downloads/windows
-* (deb) `sudo apt install libpython2.7-dev`
+* (deb) `sudo apt install python3.8`
 * (mac) preinstalled with osx
 
 ## ROS (optional)
@@ -136,7 +140,7 @@ Execute the following script to process sequences and compute the RMS ATE:
 
 1. Download a sequence from https://vision.in.tum.de/data/datasets/visual-inertial-dataset and uncompress it.
 
-2. Open the script "tum_vi_examples.sh" in the root of the project. Change **pathDatasetTUM_VI** variable to point to the directory where the dataset has been uncompressed. 
+2. Open the script "tum_vi_mono.sh" in the root of the project.
 
 3. Execute the following script to process all the sequences with all sensor configurations:
 ```
@@ -148,7 +152,7 @@ In TUM-VI ground truth is only available in the room where all sequences start a
 
 Execute the following script to process sequences and compute the RMS ATE:
 ```
-./tum_vi_eval_examples
+./tum_vi_eval_mono
 ```
 
 # 7. ROS Examples
